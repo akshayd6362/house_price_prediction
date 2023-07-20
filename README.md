@@ -1,4 +1,4 @@
-# flight_price_prediction
+# house price prediction
 
 # software and tools required
 
