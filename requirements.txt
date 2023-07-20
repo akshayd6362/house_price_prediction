@@ -1,4 +1,6 @@
-numpy 
-pandas 
-matplotlib
+Flask
 sklearn
+pandas
+numpy
+matplotlib
+gunicornpi
