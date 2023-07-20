@@ -1,6 +1,5 @@
 import json
 import pickle
-
 from flask import Flask,request,app,jsonify,url_for,render_template
 import numpy as np
 import pandas as pd
@@ -23,6 +22,7 @@ def predict_api():
     print(output[0])
     return jsonify(output[0])
 
+
 @app.route('/predict',methods=['POST'])
 def predict():
     data=[float(x) for x in request.form.values()]
@@ -34,4 +34,4 @@ def predict():
 
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port=5001,debug=True)
